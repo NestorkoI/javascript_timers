@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.primary-button {
+    padding: 8px 16px;
+    color: white;
+    background-color: inherit;
+    border-radius: 8px;
+    border: 1px solid orange;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    background-color: rgb(24, 25, 39);
+}
+
+.primary-button:active {
+    background-color: rgb(69, 76, 124);
+}
+
+
+#clock p {
+    text-align: center;
+}
+
+#clock p:nth-of-type(2) {
+    font-size: 40px;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.section {
+    width: 100%;
+    flex: 1;
+    background-color: rgb(34, 37, 61);
+    border: 1px solid lightskyblue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#stopwatch_display {
+    margin-bottom: 30px;
+}
+
+#loop_data {
+    min-width: 200px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+
+#decrease_action,
+#increase_action {
+    padding: 2px 20px;
+}
+
+#countdown_settings {
+    text-align: center;
+    margin-bottom: 30px;
+}

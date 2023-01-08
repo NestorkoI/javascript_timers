@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Javascript timers</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Clock -->
+
+      <div class="flex_row section">
+        <div id="clock">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Stopwatch -->
+
+      <div class="flex_row section">
+        <div class="flex_column">
+          <div id="stopwatch_display">dwdwd</div>
+          <div>
+            <button class="primary-button" id="startStopwatch">START</button>
+            <button class="primary-button" id="loopStopwatch">LOOP</button>
+            <button class="primary-button" id="pauseStopwatch">PAUSE</button>
+            <button class="primary-button" id="resetStopwatch">RESET</button>
+          </div>
+        </div>
+        <div class="flex_column">
+          <div id="loop_data"></div>
+        </div>
+      </div>
+
+      <!-- Countdown -->
+
+      <div class="flex_row section">
+        <div class="flex_column">
+          <div>
+            <div id="countdown_settings">25 minutes</div>
+            <button class="primary-button" id="decrease_action">-</button>
+            <button class="primary-button" id="increase_action">+</button>
+          </div>
+        </div>
+        <div class="flex_column">
+          <div>
+            <div>
+              <button class="primary-button" id="startCountdown">START</button>
+              <button class="primary-button" id="pauseCountdown">PAUSE</button>
+              <button class="primary-button" id="resetCountdown">RESET</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex_column">
+          <p id="countdown_display">00:00</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
